@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pythonprojectprogon"
+version = "0.1.0"
+description = ""
+authors = ["артем андропов <line.adsa@bk.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.1"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+pandas = "^2.2.2"
+openpyxl = "^3.1.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.11.0"
+black = "^24.4.2"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
